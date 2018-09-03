@@ -1,0 +1,14 @@
+D:\proyectos\PinnacleAerospace\todoApi\bin\Debug\netcoreapp2.1\todoApi.deps.json
+D:\proyectos\PinnacleAerospace\todoApi\bin\Debug\netcoreapp2.1\todoApi.runtimeconfig.json
+D:\proyectos\PinnacleAerospace\todoApi\bin\Debug\netcoreapp2.1\todoApi.runtimeconfig.dev.json
+D:\proyectos\PinnacleAerospace\todoApi\bin\Debug\netcoreapp2.1\todoApi.dll
+D:\proyectos\PinnacleAerospace\todoApi\bin\Debug\netcoreapp2.1\todoApi.pdb
+D:\proyectos\PinnacleAerospace\todoApi\obj\Debug\netcoreapp2.1\todoApi.csprojAssemblyReference.cache
+D:\proyectos\PinnacleAerospace\todoApi\obj\Debug\netcoreapp2.1\todoApi.csproj.CoreCompileInputs.cache
+D:\proyectos\PinnacleAerospace\todoApi\obj\Debug\netcoreapp2.1\todoApi.RazorAssemblyInfo.cache
+D:\proyectos\PinnacleAerospace\todoApi\obj\Debug\netcoreapp2.1\todoApi.RazorAssemblyInfo.cs
+D:\proyectos\PinnacleAerospace\todoApi\obj\Debug\netcoreapp2.1\todoApi.AssemblyInfoInputs.cache
+D:\proyectos\PinnacleAerospace\todoApi\obj\Debug\netcoreapp2.1\todoApi.AssemblyInfo.cs
+D:\proyectos\PinnacleAerospace\todoApi\obj\Debug\netcoreapp2.1\todoApi.RazorTargetAssemblyInfo.cache
+D:\proyectos\PinnacleAerospace\todoApi\obj\Debug\netcoreapp2.1\todoApi.dll
+D:\proyectos\PinnacleAerospace\todoApi\obj\Debug\netcoreapp2.1\todoApi.pdb

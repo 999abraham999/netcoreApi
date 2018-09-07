@@ -27,8 +27,21 @@ namespace todoApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("http://localhost:4200"));
+            });
+            //services.AddCors(options => options.AddPolicy("AllowAll", builder =>
+            //{
+            //    builder.AllowAnyOrigin();
+            //    builder.AllowAnyHeader();
+            //    builder.AllowAnyMethod();
+            //    builder.AllowCredentials();
+            //}));
             services.AddDbContext<ApplicationDbContext>(options => options.UseInMemoryDatabase("citysDB")); ;
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +55,12 @@ namespace todoApi
             {
                 app.UseHsts();
             }
+            // Shows UseCors with named policy.
+            app.UseCors("AllowSpecificOrigin");
+
+            // Shows UseCors with CorsPolicyBuilder.
+            app.UseCors(builder =>
+               builder.WithOrigins("http://localhost:4200").AllowAnyHeader());
 
             app.UseHttpsRedirection();
             app.UseMvc();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using todoApi.Models;
@@ -10,6 +11,7 @@ namespace todoApi.Controllers
 {
    // [Produces("application/json")]
     [Route("api/city")]
+    [EnableCors("AllowSpecificOrigin")]
     [ApiController]
     public class CityController : Controller
     {
@@ -21,6 +23,7 @@ namespace todoApi.Controllers
         }
 
         [HttpGet]
+        [EnableCors("AllowSpecificOrigin")]
         public IEnumerable<City> Get()
         {
             return context.Cyties.ToList();
